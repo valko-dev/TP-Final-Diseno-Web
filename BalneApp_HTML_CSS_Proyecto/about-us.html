@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BalneApp | Quiénes somos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="brand" href="index.html" aria-label="Ir al inicio de BalneApp">
+                <img src="img/BalneAppLogo.png" alt="Isologo de BalneApp" class="brand-logo">
+                <img src="img/BalneApptituloSinfondo2.png" alt="Isologo de BalneApp" class="brand-title">
+            </a>
+
+            <nav class="main-nav" aria-label="Navegación principal">
+                <a class="nav-link" href="index.html">Inicio</a>
+                <a class="nav-link active" href="about-us.html">Quiénes somos</a>
+                <a class="nav-link" href="contact.html">Contáctanos</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-main">
+        <section class="page-heading">
+            <p class="eyebrow">Equipo</p>
+            <h1 class="section-title">Quiénes somos</h1>
+            <p>
+                Somos el equipo que desarrolló BalneApp como proyecto integrador de diseño web. El sitio reúne información de balnearios de Miramar y suma ideas para organizar un día de playa.
+            </p>
+        </section>
+
+        <section class="project-info" aria-labelledby="project-title">
+            <h2 class="section-title" id="project-title">El proyecto y sus decisiones</h2>
+            <div class="feature-row">
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">🌊</span>
+                    <h3>Temática</h3>
+                    <p>Elegimos la Costa Atlántica y los balnearios de Miramar. La paleta azul y turquesa acompaña la identidad de playa y mantiene la lectura clara.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">🔌</span>
+                    <h3>API pública</h3>
+                    <p>Usamos DummyJSON Recipes para mostrar seis ideas de cocina en tarjetas. El endpoint es <code>https://dummyjson.com/recipes?limit=12</code>; el listado llega en <code>recipes</code> y cada tarjeta usa título, imagen, cocina, tiempo, porciones y calificación.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">🧩</span>
+                    <h3>Organización técnica</h3>
+                    <p>JavaScript está dividido en módulos: <code>pedirDatos.js</code> consulta la API, <code>Receta.js</code> modela los datos, <code>dibujar.js</code> actualiza el DOM y <code>app.js</code> coordina los estados.</p>
+                </article>
+            </div>
+            <p class="project-note">Las recetas son contenido de demostración e inspiración; las reservas o consultas a los balnearios no se envían a un servidor.</p>
+        </section>
+
+        <section class="team-list" aria-label="Integrantes del equipo BalneApp">
+            <article class="team-card">
+                <img src="img/MagaliBustosFoto.jpg" alt="Foto del integrante responsable de diseño visual" loading="lazy">
+                <h2>Magali Bustos</h2>
+                <p class="team-age">Edad: 19 años</p>
+                <p>Se encargó de definir la identidad visual, la paleta cromática y la organización estética general del
+                    sitio.</p>
+                <p class="team-role">Rol: Diseño visual</p>
+                <a href="contact.html" class="btn-secondary">Contactar</a>
+            </article>
+
+            <article class="team-card">
+                <img src="img/SanchezMarianaFoto.jpg" alt="Foto del integrante responsable de estructura HTML" loading="lazy">
+                <h2>Mariana Sánchez</h2>
+                <p class="team-age">Edad: 19 años</p>
+                <p>Trabajó sobre la estructura semántica de las páginas y la correcta organización de los contenidos.
+                </p>
+                <p class="team-role">Rol: Desarrollo HTML</p>
+                <a href="contact.html" class="btn-secondary">Contactar</a>
+            </article>
+
+            <article class="team-card">
+                <img src="img/ValeriaKocarFoto.png" alt="Foto del integrante responsable de estilos CSS" loading="lazy">
+                <h2>Valeria Kocar</h2>
+                <p class="team-age">Edad: 36 años</p>
+                <p>Implementó los estilos, la distribución con Flexbox y los efectos visuales de interacción.</p>
+                <p class="team-role">Rol: Desarrollo CSS</p>
+                <a href="contact.html" class="btn-secondary">Contactar</a>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© 2026 BalneApp · Magalí Bustos · Mariana Sánchez · Valeria Kocar</p>
+            <p><a href="https://github.com/valko-dev/TP-Final-Diseno-Web.git" target="_blank" rel="noopener noreferrer">Repositorio del grupo</a> · Datos: DummyJSON Recipes</p>
+        </div>
+    </footer>
+</body>
+
+</html>

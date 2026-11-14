@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BalneApp | Inicio</title>
+    <meta name="description" content="Conocé balnearios de Miramar y encontrá ideas para planificar tu día de playa con BalneApp.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="brand" href="index.html" aria-label="Ir al inicio de BalneApp">
+                <img src="img/BalneAppLogo.png" alt="Isologo de BalneApp" class="brand-logo">  
+                <img src="img/BalneApptituloSinfondo2.png" alt="Isologo de BalneApp" class="brand-title">
+            </a>
+             
+
+            <nav class="main-nav" aria-label="Navegación principal">
+                <a class="nav-link active" href="index.html">Inicio</a>
+                <a class="nav-link" href="about-us.html">Quiénes somos</a>
+                <a class="nav-link" href="contact.html">Contáctanos</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero section-soft">
+            <div class="container hero-content">
+                <article class="hero-text">
+                    <p class="eyebrow">Turismo costero desde nuestra App</p>
+                    <h1>BalneApp: tu playa a un clic.</h1>
+                    <p>
+                        BalneApp es una aplicación para android y iOS pensada para conectar turistas con balnearios de la Costa Atlántica de manera simple, clara y organizada.
+                    </p>
+                    <p>
+                        Este sitio permite conocer servicios de la app, comparar opciones, visualizar espacios disponibles y facilitar el contacto con prestadores turísticos locales.
+                    </p>
+                    <a class="btn-primary" href="#balnearios">Explorar balnearios</a>
+                </article>
+
+                <article class="hero-card" aria-label="Resumen visual de BalneApp">
+                    <img src="img/BalneAppLogo.png" alt="Logotipo BalneApp" class="hero-title-image">
+                    <div class="phone-preview">
+                        <img src="img/Balneaario-HijosDelMar.jpg" alt="Vista ilustrativa de balneario en la aplicación">
+                        <h2>Reservas simples</h2>
+                        <p>Información centralizada para planificar mejor la experiencia en la playa.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="container api-section" aria-labelledby="recipes-title">
+            <div class="page-heading">
+                <p class="eyebrow">Ideas para tu día de playa</p>
+                <h2 class="section-title" id="recipes-title">Sabores para disfrutar junto al mar</h2>
+                <p>Además de elegir balneario, podés planificar qué llevar. Estas recetas vienen de una API pública y son inspiración para un picnic; BalneApp no ofrece ni vende comida.</p>
+            </div>
+            <p class="api-source">Datos: <a href="https://dummyjson.com/docs/recipes" target="_blank" rel="noopener noreferrer">DummyJSON Recipes API</a></p>
+            <p class="api-status" id="recipe-status" role="status" aria-live="polite" data-state="loading">Cargando ideas para tu próximo día de playa…</p>
+            <div class="recipe-grid" id="recipe-cards" aria-label="Recetas recomendadas para un día de playa"></div>
+            <button class="btn-secondary api-retry" id="recipe-retry" type="button" hidden>Reintentar carga</button>
+        </section>
+
+        <section class="container info-section beach-section" id="balnearios" aria-labelledby="beaches-title">
+            <div class="page-heading">
+                <p class="eyebrow">Costa Atlántica</p>
+                <h2 class="section-title" id="beaches-title">Balnearios de Miramar</h2>
+                <p>Conocé algunos de los espacios que forman parte de la experiencia BalneApp.</p>
+            </div>
+            <div class="gallery" aria-label="Galería de balnearios de Miramar">
+                <figure class="gallery-card"><img src="img/Balneario-Oasis.jpg" alt="Vista del balneario Oasis con sombrillas y reposeras disponibles" loading="lazy"><figcaption>Balneario Oasis</figcaption></figure>
+                <figure class="gallery-card"><img src="img/Balneaario-HijosDelMar.jpg" alt="Sector de playa con sombrillas y reposeras disponibles" loading="lazy"><figcaption>Hijos del Mar</figcaption></figure>
+                <figure class="gallery-card"><img src="img/Balneario-SanAndres.jpg" alt="Vista al mar desde el Balneario San Andrés" loading="lazy"><figcaption>Balneario San Andrés</figcaption></figure>
+                <figure class="gallery-card"><img src="img/Balneario-Arena.jpg" alt="Entrada del balneario Arena Club de Playa" loading="lazy"><figcaption>Balneario Arena</figcaption></figure>
+                <figure class="gallery-card"><img src="img/Balneario-Medanos.jpg" alt="Vista desde las carpas del balneario Médanos" loading="lazy"><figcaption>Balneario Médanos</figcaption></figure>
+                <figure class="gallery-card"><img src="img/Balneario-Cacho.jpg" alt="Vista frontal del balneario Cacho" loading="lazy"><figcaption>Balneario Cacho</figcaption></figure>
+                <figure class="gallery-card"><img src="img/Balneario-LongBeach.jpg" alt="Vista interna del balneario Long Beach" loading="lazy"><figcaption>Balneario Long Beach</figcaption></figure>
+                <figure class="gallery-card"><img src="img/Balneario-CostaAzul.jpg" alt="Sombrillas y reposeras de Balneario Costa Azul" loading="lazy"><figcaption>Balneario Costa Azul</figcaption></figure>
+            </div>
+        </section>
+
+        <section class="container info-section">
+            <h2 class="section-title">¿Qué resuelve?</h2>
+            <div class="feature-row">
+                <article class="feature-card">
+                    <span class="feature-icon">🔎</span>
+                    <h3>Búsqueda inteligente</h3>
+                    <p>Filtros por ubicación, servicios, precios y preferencias del usuario.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-icon">📍</span>
+                    <h3>Ubicación clara</h3>
+                    <p>Información organizada para encontrar alternativas cercanas y comparables.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-icon">🤝</span>
+                    <h3>Impulso local</h3>
+                    <p>Mayor visibilidad digital para balnearios y comercios vinculados al turismo.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© 2026 BalneApp · Magalí Bustos · Mariana Sánchez · Valeria Kocar</p>
+            <p><a href="https://github.com/valko-dev/TP-Final-Diseno-Web.git" target="_blank" rel="noopener noreferrer">Repositorio del grupo</a> · Datos: DummyJSON Recipes</p>
+        </div>
+    </footer>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
